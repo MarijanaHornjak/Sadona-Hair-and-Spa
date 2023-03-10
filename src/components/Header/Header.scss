@@ -1,0 +1,38 @@
+@import "../../index.scss";
+
+header {
+  background-color: $rotten-cherry;
+
+  height: 11.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  box-shadow: 0px 3px 6px $dove-gray;
+
+  nav ul {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+
+    li {
+      list-style: none;
+
+      .nav-links {
+        font-size: 2rem;
+        font-family: "Barlow", sans-serif;
+        color: $dusty-cream;
+        text-decoration: none;
+        padding: 0.5rem;
+      }
+    }
+    .services {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .header-logo {
+    height: 9.3rem;
+    width: 16.5rem;
+  }
+}

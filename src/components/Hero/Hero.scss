@@ -1,0 +1,9 @@
+@import "../../index.scss";
+
+.hero-section {
+  background-image: url("../../assets/images/920.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(95rem - 11.3rem);
+}
