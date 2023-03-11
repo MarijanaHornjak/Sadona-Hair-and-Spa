@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import ArrowDownImage from "../../assets/icons/Icon ionic-ios-arrow-back-2.png";
+import { Link } from "react-scroll";
+
 import HeaderLogo from "../../assets/images/image-asset.png";
+// import Hero from "../Hero/Hero";
 import "./Header.scss";
+import HeaderArrowDown from "./HeaderArrowDown";
 
 const Header = () => {
   return (
@@ -10,7 +12,12 @@ const Header = () => {
       <nav className="nav-left">
         <ul>
           <li>
-            <Link to="/" className="nav-links">
+            <Link
+              to="hero-section"
+              smooth={true}
+              duration={500}
+              className="nav-links"
+            >
               Home
             </Link>
           </li>
@@ -22,8 +29,8 @@ const Header = () => {
           <li className="services">
             <Link to="/services" className="nav-links">
               Services
+              <HeaderArrowDown />
             </Link>
-            <img src={ArrowDownImage} alt="arrow-down" />
           </li>
         </ul>
       </nav>

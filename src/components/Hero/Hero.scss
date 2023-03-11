@@ -1,9 +1,94 @@
 @import "../../index.scss";
 
-.hero-section {
+#hero-section {
   background-image: url("../../assets/images/920.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(95rem - 11.3rem);
+  height: 84.7rem;
+
+  .hero-container {
+    @extend .container-align;
+    padding-top: 20rem;
+
+    h1 {
+      font-size: 7rem;
+      font-family: "Prata", serif;
+      line-height: 8rem;
+      color: $snow-white;
+      width: 55.2rem;
+    }
+    h2 {
+      font-size: 5rem;
+      font-family: "Cookie", cursive;
+      color: $snow-white;
+      line-height: 6rem;
+    }
+    .contact-button {
+      @extend .button-basic-style;
+      margin-top: 2rem;
+    }
+
+    .hero-slider {
+      margin: 22rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .number-container {
+        border-top: 3px solid rgba(255, 255, 255, 0.4);
+        width: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+
+        span {
+          font-size: 1.8rem;
+          line-height: 2.5rem;
+          font-family: "Prata", serif;
+          color: $snow-white;
+          border-top: 3px solid $snow-white;
+          padding: 1.3rem;
+          width: 5rem;
+          height: 3.8rem;
+          text-align: center;
+          transform: translateY(-0.3rem);
+          cursor: pointer;
+          &:hover {
+            color: $rotten-cherry;
+            border-top: 3px solid $rotten-cherry;
+          }
+        }
+      }
+      .hero-arrow {
+        height: 3rem;
+
+        width: 3rem;
+        border: 1px solid $snow-white;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+      .arrowDown {
+        fill: $snow-white;
+        text-align: center;
+      }
+      .hero-arrow-left {
+        position: relative;
+        right: 27rem;
+        bottom: 2rem;
+      }
+      .hero-arrow-right {
+        position: relative;
+        bottom: 1.8rem;
+        left: 27rem;
+
+        transform: rotate(180deg);
+      }
+    }
+  }
 }

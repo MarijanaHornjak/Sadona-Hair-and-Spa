@@ -24,15 +24,31 @@ header {
         color: $dusty-cream;
         text-decoration: none;
         padding: 0.5rem;
+        img {
+          margin-left: 1rem;
+        }
+
+        &:hover {
+          color: $snow-white;
+          cursor: pointer;
+          border-bottom: 2px solid $snow-white;
+          padding-bottom: 4.3rem;
+        }
       }
-    }
-    .services {
-      display: flex;
-      align-items: center;
     }
   }
   .header-logo {
     height: 9.3rem;
     width: 16.5rem;
+  }
+  .arrowDown {
+    fill: $dusty-cream;
+    margin-left: 1rem;
+    transform: rotate(-90deg);
+    width: 0.5rem;
+    height: auto;
+    &:hover {
+      fill: $snow-white;
+    }
   }
 }
