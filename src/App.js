@@ -1,6 +1,7 @@
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import OurStory from "./components/OurStory/OurStory";
 import Reopening from "./components/Reopening/Reopening";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <Reopening />
+      <OurStory />
     </div>
   );
 }

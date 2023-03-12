@@ -19,9 +19,14 @@ $dove-gray: rgba(0, 0, 0, 0.161);
 $off-white: #f3f3f3;
 $snow-white: #ffffff;
 
+// General Style/
 .container-align {
   margin: 0 auto;
   width: 70%;
+}
+.container-align-inside {
+  margin: 0 auto;
+  width: 50%;
 }
 .button-basic-style {
   background-color: $dark-brown;

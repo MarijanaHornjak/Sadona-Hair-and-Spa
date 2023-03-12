@@ -1,0 +1,41 @@
+@import "../../index.scss";
+
+.our-story-container {
+  @extend .container-align-inside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0;
+
+  .our-story-main-text {
+    font-size: 3rem;
+    font-family: "Prata", serif;
+    line-height: 4.5rem;
+    color: $rotten-cherry;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .our-story-small-text {
+    font-size: 1.6rem;
+    font-family: "Barlow", sans-serif;
+    line-height: 2.6rem;
+    color: $dark-brown;
+    margin-bottom: 2rem;
+  }
+  .our-story-button {
+    @extend .button-basic-style;
+  }
+  .our-story-upper-line,
+  .our-story-down-line {
+    width: 10.8rem;
+    height: 4rem;
+  }
+  .our-story-upper-line {
+    border-top: 1px solid $rotten-cherry;
+    height: 2rem;
+  }
+  .our-story-down-line {
+    border-bottom: 1px solid $rotten-cherry;
+  }
+}
