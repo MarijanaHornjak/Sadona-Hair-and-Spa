@@ -1,6 +1,13 @@
 import React from "react";
 import "./Hero.scss";
 import HeaderArrowDown from "../Header/HeaderArrowDown";
+import Flower1 from "../../assets/flowers&leafs/cvet 1.png";
+import Leaf1 from "../../assets/flowers&leafs/3.png";
+import Flower2 from "../../assets/flowers&leafs/cvet 2.png";
+import Leaf2 from "../../assets/flowers&leafs/2.png";
+import Leaf3 from "../../assets/flowers&leafs/4.png";
+import FacebookIcon from "./FacebookIcon";
+import InstagramIcon from "./InstagramIcon";
 
 const Hero = () => {
   return (
@@ -22,6 +29,18 @@ const Hero = () => {
           <button className="hero-arrow hero-arrow-right">
             <HeaderArrowDown />
           </button>
+        </div>
+        <img src={Flower1} alt="cvet1" className="flower-1" />
+        <img src={Flower1} alt="cvet1" className="flower-1-small" />
+        <img src={Leaf1} alt="list1" className="leaf-1" />
+        <img src={Flower2} alt="cvet2" className="flower-2" />
+        <img src={Leaf2} alt="list2" className="leaf-2" />
+        <img src={Leaf3} alt="list3" className="leaf-3" />
+
+        <div className="social-media">
+          <FacebookIcon />
+          <InstagramIcon />
+          <span></span>
         </div>
       </div>
     </section>

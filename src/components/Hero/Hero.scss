@@ -10,6 +10,7 @@
   .hero-container {
     @extend .container-align;
     padding-top: 20rem;
+    position: relative;
 
     h1 {
       font-size: 7rem;
@@ -30,10 +31,10 @@
     }
 
     .hero-slider {
-      margin: 22rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      transform: translateY(23rem);
 
       .number-container {
         border-top: 3px solid rgba(255, 255, 255, 0.4);
@@ -88,6 +89,61 @@
         left: 27rem;
 
         transform: rotate(180deg);
+      }
+    }
+    .flower-1 {
+      position: absolute;
+
+      top: 4.7rem;
+      left: -3.4rem;
+    }
+    .flower-1-small {
+      position: absolute;
+
+      transform: scale(0.8);
+      top: 11rem;
+      right: 58rem;
+    }
+    .leaf-1 {
+      position: absolute;
+      top: 13rem;
+      right: 93rem;
+    }
+    .flower-2 {
+      position: absolute;
+      top: 44rem;
+      left: 38rem;
+    }
+    .leaf-2 {
+      position: absolute;
+      top: 62rem;
+      left: 23rem;
+    }
+    .leaf-3 {
+      position: absolute;
+      bottom: 7rem;
+      right: -11rem;
+    }
+    .social-media {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+      transform: translateY(-21.3rem);
+      gap: 1rem;
+
+      .facebook-icon,
+      .instagram-icon {
+        fill: $snow-white;
+        cursor: pointer;
+        &:hover {
+          fill: $rotten-cherry;
+        }
+      }
+      span {
+        border-left: 1px solid $snow-white;
+        height: 5.6rem;
+        transform: translateX(0.5rem);
       }
     }
   }
