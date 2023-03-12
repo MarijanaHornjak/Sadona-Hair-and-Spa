@@ -1,0 +1,51 @@
+@import "../../index.scss";
+
+.reopening-section {
+  background-color: $dusty-cream;
+  height: 21.4rem;
+  position: relative;
+
+  .reopening-container {
+    @extend .container-align;
+    padding: 4rem 0;
+    text-align: center;
+    .reopening-title {
+      color: $snow-white;
+      font-size: 3rem;
+      line-height: 4.5rem;
+      font-family: "Prata", serif;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: $rotten-cherry;
+      font-family: "Prata", serif;
+    }
+    .reopening-button {
+      @extend .button-basic-style;
+      margin-top: 2rem;
+    }
+  }
+  .reopening-leaf-left {
+    position: absolute;
+    top: 2rem;
+    left: 67.3rem;
+    transform: rotate(237deg);
+  }
+  .reopening-leaf-right {
+    position: absolute;
+    width: 5.3rem;
+    height: 3.5rem;
+    transform: rotate(45deg);
+    filter: blur(5px);
+    top: 4rem;
+    right: 65rem;
+  }
+  .reopening-flower {
+    position: absolute;
+    right: 62rem;
+    transform: matrix(0.91, -0.41, 0.41, 0.91, 0, 0);
+    bottom: -8rem;
+  }
+}

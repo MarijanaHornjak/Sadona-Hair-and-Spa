@@ -100,7 +100,7 @@
     .flower-1-small {
       position: absolute;
 
-      transform: scale(0.8);
+      transform: matrix(-0.91, -0.41, 0.41, -0.91, 0, 0);
       top: 11rem;
       right: 58rem;
     }
