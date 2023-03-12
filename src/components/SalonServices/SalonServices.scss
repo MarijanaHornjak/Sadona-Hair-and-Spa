@@ -1,0 +1,63 @@
+@import "../../index.scss";
+
+.salon-services-container {
+  @extend .container-align;
+  display: flex;
+  margin-top: 6rem;
+  min-width: 70%;
+  position: relative;
+
+  .salon-services-text {
+    position: absolute;
+    z-index: 1;
+
+    .salon-icon-container {
+      display: flex;
+      align-items: center;
+      padding-top: 3rem;
+      margin-bottom: 2.4rem;
+      .salon-icon {
+        fill: $rotten-cherry;
+        width: 3.6rem;
+        height: 3.6rem;
+      }
+      p {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-family: "Cookie", cursive;
+        color: $rotten-cherry;
+        margin-left: 2rem;
+      }
+    }
+    h3 {
+      font-size: 5rem;
+      line-height: 6rem;
+      font-family: "Prata", serif;
+      color: $dark-brown;
+      // z-index: 999;
+    }
+    p {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      line-height: 2.6rem;
+      font-family: "Barlow", sans-serif;
+      width: 35.8rem;
+    }
+  }
+
+  .salon-services-images {
+    text-align: right;
+    z-index: 0;
+
+    .salon-girl {
+      width: 93.9rem;
+      height: 35.7rem;
+      object-position: top;
+      border-radius: 25rem 0 0 0;
+    }
+    .salon-hair {
+      border-radius: 10rem 0 10rem 0;
+      transform: translateY(-12rem);
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import "../../index.scss";
+
+#spa-services-section {
+  height: 46.4rem;
+  background-image: url("../../assets/images/13956.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+
+  .spa-services-container {
+    background-color: $rotten-cherry;
+    position: absolute;
+    z-index: 1;
+    padding-left: 28.3rem;
+    border-top-right-radius: 16rem;
+    height: 46.4rem;
+
+    .spa-icons {
+      display: flex;
+      align-items: center;
+      margin-top: 8.4rem;
+      .spa-candle {
+        width: 3.2rem;
+        height: 3.6rem;
+        fill: $peachy-cream;
+      }
+      p {
+        color: $peachy-cream;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-family: "Cookie", cursive;
+        margin-left: 2rem;
+      }
+    }
+    h3 {
+      font-size: 5rem;
+      font-weight: normal;
+      line-height: 6rem;
+      font-family: "Prata", serif;
+      color: $snow-white;
+      margin-top: 2.4rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: $snow-white;
+      text-align: left;
+      width: 45.5rem;
+      margin-bottom: 2rem;
+    }
+    .spa-button {
+      @extend .button-basic-style;
+      background-color: $dusty-cream;
+      color: $dark-brown;
+      border: 1px solid $dusty-cream;
+      margin-bottom: 8rem;
+      &:hover {
+        color: $snow-white;
+        background-color: $dusty-cream;
+      }
+    }
+    .check-out-more {
+      display: flex;
+      // align-items: center;
+      gap: 1rem;
+
+      .spa-arrow-bottom {
+        height: 1.1rem;
+        width: 0.6rem;
+        fill: $peachy-cream;
+        // transform: translateY(0.3rem);
+      }
+      p {
+        font-size: 1.2rem;
+        font-family: "Barlow", sans-serif;
+        line-height: 1.5rem;
+        color: $peachy-cream;
+      }
+    }
+  }
+}
