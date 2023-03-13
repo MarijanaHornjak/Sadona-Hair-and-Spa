@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import OurStory from "./components/OurStory/OurStory";
 import Reopening from "./components/Reopening/Reopening";
 import SalonServices from "./components/SalonServices/SalonServices";
+import SaltServices from "./components/SaltServices/SaltServices";
 import SpaServices from "./components/SpaServices/SpaServices";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <SalonServices />
       <SpaServices />
       <BridalServices />
+      <SaltServices />
     </div>
   );
 }

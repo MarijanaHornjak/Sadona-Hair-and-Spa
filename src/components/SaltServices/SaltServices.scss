@@ -1,0 +1,66 @@
+@import "../../index.scss";
+
+.salt-services-section {
+  height: 37.2rem;
+  background-color: $dusty-cream;
+  margin-bottom: 4rem;
+
+  .salt-services-container {
+    @extend .container-align;
+    display: flex;
+    gap: 3rem;
+
+    .salt-text-container {
+      margin-top: 8rem;
+      position: relative;
+
+      .salt-icon-container {
+        display: flex;
+        align-items: center;
+        .salt-icon {
+          fill: $rotten-cherry;
+          margin-right: 2rem;
+          width: 3.7rem;
+          height: 3.3rem;
+        }
+        p {
+          font-size: 2.5rem;
+          line-height: 3rem;
+          color: $rotten-cherry;
+          font-family: "Cookie", cursive;
+        }
+      }
+      h3 {
+        font-size: 5rem;
+        line-height: 6rem;
+        color: $snow-white;
+        font-family: "Prata", serif;
+        font-weight: lighter;
+        margin: 2rem 0;
+      }
+      p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: $snow-white;
+        font-family: "Barlow", sans-serif;
+      }
+    }
+    .salt-section-floral {
+      position: absolute;
+      top: -7rem;
+      right: 4rem;
+      transform: matrix(0.89, -0.45, 0.45, 0.89, 0, 0);
+    }
+    .salt-section-leaf {
+      position: absolute;
+      bottom: 1rem;
+      right: 2rem;
+      transform: matrix(-0.54, -0.84, 0.84, -0.54, 0, 0);
+    }
+
+    .salt-services-image {
+      height: 37.2rem;
+      border-radius: 0 15rem 0 15rem;
+    }
+  }
+}
