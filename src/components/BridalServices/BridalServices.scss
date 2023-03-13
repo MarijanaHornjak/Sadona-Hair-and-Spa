@@ -1,0 +1,84 @@
+@import "../../index.scss";
+
+.bridal-services-container {
+  @extend .container-align;
+  height: 51.6rem;
+  // max-width: 113.4rem;
+  background-image: url("../../assets/images/635676-POCVFD-599.png");
+  // background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 58% 42%;
+
+  .bridal-details {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-left: 4rem;
+    position: relative;
+
+    .bridal-icons {
+      margin-top: 8rem;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+
+      .bride-icon {
+        fill: $rotten-cherry;
+        height: 3.6rem;
+        width: 3.5rem;
+        margin-right: 2rem;
+      }
+      p {
+        color: $rotten-cherry;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-family: "Cookie", cursive;
+        transform: translateY(1rem);
+      }
+    }
+    h3 {
+      font-size: 5rem;
+      line-height: 6rem;
+      color: $dark-brown;
+      font-family: "Prata", serif;
+      font-weight: lighter;
+      margin-bottom: 2rem;
+    }
+    p {
+      color: $rotten-cherry;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      font-family: "Barlow", sans-serif;
+      margin-bottom: 2rem;
+    }
+    .bridal-services-button {
+      @extend .button-basic-style;
+      margin-bottom: 8rem;
+    }
+    .check-out-more {
+      display: flex;
+      gap: 1rem;
+      .spa-arrow-bottom {
+        fill: $rotten-cherry;
+        transform: translateY(0.2rem);
+      }
+      p {
+        font-size: 1.2rem;
+        color: $rotten-cherry;
+        line-height: 1.5rem;
+        font-family: "Barlow", sans-serif;
+      }
+    }
+    .bridal-floral {
+      position: absolute;
+      top: -2rem;
+      right: 2rem;
+    }
+    .bridal-leaf {
+      position: absolute;
+      bottom: 6rem;
+      right: 12rem;
+    }
+  }
+}

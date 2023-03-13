@@ -22,7 +22,12 @@ const Header = () => {
             </Link>
           </li>
           <li className="our-story">
-            <Link to="/ourstory" className="nav-links">
+            <Link
+              to="our-story-section"
+              smooth={true}
+              duration={500}
+              className="nav-links"
+            >
               Our Story
             </Link>
           </li>

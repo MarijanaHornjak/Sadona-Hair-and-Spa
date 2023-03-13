@@ -1,4 +1,5 @@
 import "./App.scss";
+import BridalServices from "./components/BridalServices/BridalServices";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import OurStory from "./components/OurStory/OurStory";
@@ -15,6 +16,7 @@ function App() {
       <OurStory />
       <SalonServices />
       <SpaServices />
+      <BridalServices />
     </div>
   );
 }

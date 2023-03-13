@@ -3,7 +3,7 @@ import "./OurStory.scss";
 
 const OurStory = () => {
   return (
-    <section className="our-story-section">
+    <section id="our-story-section">
       <div className="our-story-container">
         <span className="our-story-upper-line"></span>
         <p className="our-story-main-text">
