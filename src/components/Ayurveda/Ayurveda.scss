@@ -1,0 +1,49 @@
+@import "../../index.scss";
+
+.ayurveda-container {
+  @extend .container-align-inside;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  .ayurveda-line {
+    height: 0.2rem;
+    background-color: $rotten-cherry;
+    width: 10.9rem;
+    margin: 3rem;
+    align-self: center;
+  }
+  .ayurveda-main-text {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-family: "Prata", serif;
+    color: $rotten-cherry;
+    margin: 1rem 0;
+  }
+
+  .ayurveda-small-text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-family: "Barlow", sans-serif;
+    color: $dark-brown;
+  }
+  .ayurveda-floral {
+    position: absolute;
+    top: -6rem;
+    right: 3rem;
+    transform: matrix(-0.91, -0.41, 0.41, -0.91, 0, 0);
+    filter: blur(5px);
+  }
+  .ayurveda-leaf {
+    position: absolute;
+    width: 7rem;
+    height: 4.6rem;
+    filter: blur(5px);
+    bottom: 4rem;
+    left: 12rem;
+    transform: rotate(45deg);
+  }
+}
