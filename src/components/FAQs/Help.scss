@@ -1,0 +1,59 @@
+@import "../../index.scss";
+
+.help-section {
+  margin: 12rem 0;
+  .help-container {
+    @extend .container-align;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .help-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .help-icon {
+        fill: $rotten-cherry;
+        height: 3.1rem;
+        width: 3.1rem;
+      }
+      p {
+        color: $rotten-cherry;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-family: "Cookie", cursive;
+      }
+    }
+    .help-text {
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        color: $dark-brown;
+        font-size: 5rem;
+        line-height: 6rem;
+        font-family: "Prata", serif;
+        font-weight: lighter;
+      }
+      button {
+        @extend .button-basic-style;
+        height: 4.1rem;
+        align-self: center;
+      }
+    }
+  }
+  .help-floral {
+    position: absolute;
+    top: -11rem;
+    right: 30rem;
+    transform: matrix(-0.91, -0.41, 0.41, -0.91, 0, 0);
+    filter: blur(5px);
+  }
+  .help-leaf {
+    position: absolute;
+    bottom: -7rem;
+    right: 46rem;
+    transform: matrix(-0.54, -0.84, 0.84, -0.54, 0, 0);
+  }
+}
