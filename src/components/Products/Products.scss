@@ -1,0 +1,107 @@
+@import "../../index.scss";
+
+.products-container {
+  @extend .container-align;
+  background-color: $rotten-cherry;
+  border-radius: 0 15rem 0 15rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  overflow: hidden;
+  margin-bottom: 8rem;
+  &:hover {
+    background-color: $dusty-cream;
+    .products-text-container {
+      .products-icon {
+        .product-icon {
+          fill: $rotten-cherry;
+        }
+        p {
+          color: $rotten-cherry;
+        }
+      }
+      h3 {
+        color: $rotten-cherry;
+      }
+      .products-small-text {
+        &::after {
+          content: (
+            "Reduce your drying and styling time by client reported 33-50%."
+          );
+          color: $snow-white;
+        }
+      }
+      .available-products-link {
+        p {
+          color: $rotten-cherry;
+        }
+        .spa-arrow-bottom {
+          fill: $rotten-cherry;
+        }
+      }
+    }
+  }
+
+  .products-text-container {
+    margin: 4rem;
+
+    .products-icon {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
+      .product-icon {
+        fill: $dusty-cream;
+        height: 3.2rem;
+        width: 3.5rem;
+      }
+      p {
+        color: $dusty-cream;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-family: "Cookie", cursive;
+      }
+    }
+    h3 {
+      font-size: 5rem;
+      line-height: 6rem;
+      font-family: "Prata", serif;
+      font-weight: lighter;
+      color: $snow-white;
+      margin-bottom: 2rem;
+      &:hover {
+        color: $rotten-cherry;
+      }
+    }
+    .products-small-text {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      font-family: "Barlow", sans-serif;
+      color: $snow-white;
+    }
+  }
+
+  .products-image-container {
+    border-bottom-left-radius: 15rem;
+    background-image: url("../../assets/images/Cezanne-Stylign-Line.png");
+    height: 31.9rem;
+  }
+  .available-products-link {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    transform: translateY(4rem);
+    .spa-arrow-bottom {
+      transform: rotate(-90deg);
+      fill: $dusty-cream;
+    }
+    p {
+      color: $dusty-cream;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      font-family: "Barlow", sans-serif;
+    }
+  }
+}

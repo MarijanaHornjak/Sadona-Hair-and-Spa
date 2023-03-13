@@ -4,6 +4,7 @@ import BridalServices from "./components/BridalServices/BridalServices";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import OurStory from "./components/OurStory/OurStory";
+import Products from "./components/Products/Products";
 import Reopening from "./components/Reopening/Reopening";
 import SalonServices from "./components/SalonServices/SalonServices";
 import SaltServices from "./components/SaltServices/SaltServices";
@@ -21,6 +22,7 @@ function App() {
       <BridalServices />
       <SaltServices />
       <Ayurveda />
+      <Products />
     </div>
   );
 }
