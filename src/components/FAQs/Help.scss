@@ -29,6 +29,7 @@
     .help-text {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       h3 {
         color: $dark-brown;
         font-size: 5rem;
@@ -36,10 +37,13 @@
         font-family: "Prata", serif;
         font-weight: lighter;
       }
-      button {
-        @extend .button-basic-style;
+      .button-wrapper {
+        margin: 0;
+        button {
+          @extend .button-basic-style;
 
-        align-self: center;
+          align-self: center;
+        }
       }
     }
   }

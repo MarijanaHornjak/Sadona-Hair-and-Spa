@@ -1,0 +1,24 @@
+@import "../../index.scss";
+
+.gift-container {
+  @extend .container-align;
+  padding: 8rem 0;
+  background-color: $off-white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    color: $rotten-cherry;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-family: "Prata", serif;
+    font-weight: lighter;
+  }
+  .button-wrapper {
+    margin: 0;
+    button {
+      @extend .button-basic-style;
+    }
+  }
+}

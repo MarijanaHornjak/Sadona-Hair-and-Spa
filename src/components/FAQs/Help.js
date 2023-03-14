@@ -15,7 +15,9 @@ const Help = () => {
         </div>
         <div className="help-text">
           <h3>How Can We Help You?</h3>
-          <button>Recently Asked Questions</button>
+          <div className="button-wrapper">
+            <button>Recently Asked Questions</button>
+          </div>
         </div>
         <img src={Leaf3} alt="leaf" className="help-leaf" />
       </div>

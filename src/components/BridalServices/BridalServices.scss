@@ -53,9 +53,12 @@
       font-family: "Barlow", sans-serif;
       margin-bottom: 2rem;
     }
-    .bridal-services-button {
-      @extend .button-basic-style;
+    .button-wrapper {
       margin-bottom: 8rem;
+      .bridal-services-button {
+        @extend .button-basic-style;
+        // margin-bottom: 8rem;
+      }
     }
     .check-out-more {
       display: flex;

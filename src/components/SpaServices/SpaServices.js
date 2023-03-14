@@ -16,7 +16,9 @@ const SpaServices = () => {
           Both an escape and an oasis, the luxurious spa experiences at Sadona
           will leave you feeling soothed, energized and refreshed.
         </p>
-        <button className="spa-button">All Services</button>
+        <div className="button-wrapper-light">
+          <button className="spa-button">All Services</button>
+        </div>
         <div className="check-out-more">
           <ArrowBottom />
           <p>Check out more</p>

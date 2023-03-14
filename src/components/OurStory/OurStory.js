@@ -14,7 +14,9 @@ const OurStory = () => {
           And from the moment you walk through our door, you will see exactly
           what we mean. Come, let's look around together.
         </p>
-        <button className="our-story-button">Our story</button>
+        <div className="button-wrapper">
+          <button className="our-story-button">Our story</button>
+        </div>
         <span className="our-story-down-line"></span>
       </div>
     </section>

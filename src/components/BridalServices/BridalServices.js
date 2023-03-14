@@ -22,7 +22,9 @@ const BridalServices = () => {
             retreat to prepare and enjoy that memorable “get ready time” with
             family and friends on your most beautiful and special day!
           </p>
+          <div className="button-wrapper">
           <button className="bridal-services-button">All Services</button>
+          </div>
           <div className="check-out-more">
             <ArrowBottom />
             <p>Check out more</p>

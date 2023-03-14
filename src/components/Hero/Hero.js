@@ -15,7 +15,9 @@ const Hero = () => {
       <div className="hero-container">
         <h2>A new type of salon.</h2>
         <h1>A New Type Of Experience</h1>
-        <button className="contact-button">Contact</button>
+        <div className="button-wrapper">
+          <button className="contact-button">Contact</button>
+        </div>
         <div className="hero-slider">
           <button className="hero-arrow hero-arrow-left">
             <HeaderArrowDown />

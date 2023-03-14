@@ -10,7 +10,9 @@ const Reopening = () => {
       <div className="reopening-container">
         <p className="reopening-title">We are Reopening!</p>
         <p>Check out details about new safety guidelines</p>
+        <div className="button-wrapper">
         <button className="reopening-button">Safety Guidelines</button>
+        </div>
       </div>
       <img src={Leaf3} alt="leaf" className="reopening-leaf-left" />
       <img src={Leaf2} alt="leaf" className="reopening-leaf-right" />

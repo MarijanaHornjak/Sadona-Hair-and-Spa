@@ -2,6 +2,7 @@ import "./App.scss";
 import Ayurveda from "./components/Ayurveda/Ayurveda";
 import BridalServices from "./components/BridalServices/BridalServices";
 import Help from "./components/FAQs/Help";
+import GiftCard from "./components/GiftCard/GiftCard";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import News from "./components/News/News";
@@ -27,6 +28,7 @@ function App() {
       <Products />
       <Help />
       <News />
+      <GiftCard />
     </div>
   );
 }

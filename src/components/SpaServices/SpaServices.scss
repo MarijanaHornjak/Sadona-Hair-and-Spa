@@ -50,15 +50,24 @@
       width: 45.5rem;
       margin-bottom: 2rem;
     }
-    .spa-button {
-      @extend .button-basic-style;
-      background-color: $dusty-cream;
-      color: $dark-brown;
-      border: 1px solid $dusty-cream;
-      margin-bottom: 8rem;
+    .button-wrapper-light {
+      @extend .button-wrapper;
+      border-color: $dusty-cream;
+      margin-bottom: 6rem;
       &:hover {
-        color: $snow-white;
+        border-color: $dusty-cream;
+      }
+
+      .spa-button {
+        @extend .button-basic-style;
         background-color: $dusty-cream;
+        color: $dark-brown;
+        border: 1px solid $dusty-cream;
+        &:hover {
+          color: $snow-white;
+          background-color: $dusty-cream;
+          border-color: $dusty-cream;
+        }
       }
     }
     .check-out-more {
