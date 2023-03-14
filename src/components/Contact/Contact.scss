@@ -7,10 +7,21 @@
     @extend .container-align;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     .sadona-logo {
       width: 13.6rem;
       height: 7.6rem;
+    }
+    .contact-floral {
+      position: absolute;
+      top: -2rem;
+      right: 21rem;
+    }
+    .contact-leaf {
+      position: absolute;
+      top: -1rem;
+      left: 27rem;
     }
 
     .contact-information {
@@ -26,6 +37,7 @@
         font-weight: lighter;
         line-height: 6rem;
         text-align: left;
+        margin-right: 10rem;
       }
       .contact-details {
         display: flex;

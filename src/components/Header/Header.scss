@@ -3,52 +3,55 @@
 header {
   background-color: $rotten-cherry;
 
-  height: 11.3rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
   box-shadow: 0px 3px 6px $dove-gray;
+  .header-container {
+    @extend .container-align;
+    height: 11.3rem;
 
-  nav ul {
     display: flex;
-    gap: 2.4rem;
+    justify-content: space-between;
     align-items: center;
 
-    li {
-      list-style: none;
+    nav ul {
+      display: flex;
+      gap: 2.4rem;
+      align-items: center;
 
-      .nav-links {
-        font-size: 2rem;
-        font-family: "Barlow", sans-serif;
-        color: $dusty-cream;
-        text-decoration: none;
-        padding: 0.5rem;
-        img {
-          margin-left: 1rem;
-        }
+      li {
+        list-style: none;
 
-        &:hover {
-          color: $snow-white;
-          cursor: pointer;
-          border-bottom: 2px solid $snow-white;
-          padding-bottom: 4.3rem;
+        .nav-links {
+          font-size: 2rem;
+          font-family: "Barlow", sans-serif;
+          color: $dusty-cream;
+          text-decoration: none;
+          padding: 0.5rem;
+          img {
+            margin-left: 1rem;
+          }
+
+          &:hover {
+            color: $snow-white;
+            cursor: pointer;
+            border-bottom: 2px solid $snow-white;
+            padding-bottom: 4.3rem;
+          }
         }
       }
     }
-  }
-  .header-logo {
-    height: 9.3rem;
-    width: 16.5rem;
-  }
-  .arrowDown {
-    fill: $dusty-cream;
-    margin-left: 1rem;
-    transform: rotate(-90deg);
-    width: 0.5rem;
-    height: auto;
-    &:hover {
-      fill: $snow-white;
+    .header-logo {
+      height: 9.3rem;
+      width: 16.5rem;
+    }
+    .arrowDown {
+      fill: $dusty-cream;
+      margin-left: 1rem;
+      transform: rotate(-90deg);
+      width: 0.5rem;
+      height: auto;
+      &:hover {
+        fill: $snow-white;
+      }
     }
   }
 }

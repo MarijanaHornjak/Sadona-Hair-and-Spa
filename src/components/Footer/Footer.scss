@@ -1,0 +1,12 @@
+@import "../../index.scss";
+.footer-section {
+  text-align: center;
+  background-color: $rotten-cherry;
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: $snow-white;
+    font-size: "Playfair Display", serif;
+    padding: 1rem;
+  }
+}

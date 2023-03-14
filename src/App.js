@@ -3,6 +3,7 @@ import Ayurveda from "./components/Ayurveda/Ayurveda";
 import BridalServices from "./components/BridalServices/BridalServices";
 import Contact from "./components/Contact/Contact";
 import Help from "./components/FAQs/Help";
+import Footer from "./components/Footer/Footer";
 import GiftCard from "./components/GiftCard/GiftCard";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -31,6 +32,7 @@ function App() {
       <News />
       <GiftCard />
       <Contact />
+      <Footer />
     </div>
   );
 }

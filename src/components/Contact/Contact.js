@@ -8,12 +8,16 @@ import TimeIcon from "./TimeIcon";
 import FacebookIcon from "../Hero/FacebookIcon";
 import InstagramIcon from "../Hero/InstagramIcon";
 import BottomNavigation from "./BottomNavigation";
+import Floral1 from "../../assets/flowers&leafs/cvet 1.png";
+import Leaf4 from "../../assets/flowers&leafs/4.png";
 
 const Contact = () => {
   return (
     <section id="contact-section">
       <div className="contact-container">
         <img src={SadonaLogo} alt="logo" className="sadona-logo" />
+        <img src={Floral1} alt="floral" className="contact-floral" />
+        <img src={Leaf4} alt="leaf" className="contact-leaf" />
         <div className="contact-information">
           <h3>We'd love to hear from you.</h3>
           <div className="contact-details">
