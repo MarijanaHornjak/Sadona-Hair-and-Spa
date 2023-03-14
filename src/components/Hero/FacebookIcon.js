@@ -7,6 +7,7 @@ const FacebookIcon = () => {
       width="12"
       height="22"
       viewBox="0 0 12 22"
+      className="facebook-icon"
     >
       <path
         className="facebook-icon"

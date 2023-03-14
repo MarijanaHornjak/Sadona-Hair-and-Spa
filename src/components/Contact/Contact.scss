@@ -1,1 +1,120 @@
 @import "../../index.scss";
+
+#contact-section {
+  background-color: $off-white;
+
+  .contact-container {
+    @extend .container-align;
+    display: flex;
+    flex-direction: column;
+
+    .sadona-logo {
+      width: 13.6rem;
+      height: 7.6rem;
+    }
+
+    .contact-information {
+      margin: 4rem 0;
+      display: flex;
+      gap: 3rem;
+
+      h3 {
+        color: $rotten-cherry;
+        width: 35.8rem;
+        font-size: 5rem;
+        font-family: "Prata", serif;
+        font-weight: lighter;
+        line-height: 6rem;
+        text-align: left;
+      }
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .contact-number {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          .phone-icon {
+            @extend .contact-icons;
+          }
+          p {
+            @extend .contact-general-p;
+          }
+        }
+        .contact-email {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          .letter-icon {
+            @extend .contact-icons;
+          }
+          p {
+            @extend .contact-general-p;
+          }
+        }
+        .contact-location {
+          display: flex;
+          gap: 1rem;
+          .location-icon {
+            @extend .contact-icons;
+            height: 1.9rem;
+            width: 1.3rem;
+          }
+          p {
+            @extend .contact-general-p;
+          }
+        }
+      }
+
+      .hours-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .hours-title {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          .time-icon {
+            @extend .contact-icons;
+            width: 1.7rem;
+            height: 1.7rem;
+          }
+          h5 {
+            @extend .contact-general-p;
+            color: $rotten-cherry;
+          }
+        }
+        .open-days {
+          width: 23.4rem;
+          p {
+            @extend .contact-general-p;
+          }
+        }
+      }
+      .follow-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h5 {
+          @extend .contact-general-p;
+          color: $rotten-cherry;
+        }
+        .social-media-icons {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          .facebook-icon {
+            width: 0.9rem;
+            height: 1.7rem;
+          }
+          .instagram-icon {
+            width: 1.7rem;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

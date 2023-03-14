@@ -1,0 +1,27 @@
+@import "../../index.scss";
+
+.bottom-navigation {
+  display: flex;
+  gap: 12.7rem;
+  padding-bottom: 8rem;
+
+  .bottom-left-navigation,
+  .bottom-right-navigation {
+    ul {
+      display: flex;
+      gap: 2.6rem;
+      li {
+        text-decoration: none;
+        list-style: none;
+        .bottom-nav-link {
+          @extend .contact-general-p;
+          cursor: pointer;
+          &:hover {
+            color: $rotten-cherry;
+            border-bottom: 2px solid $rotten-cherry;
+          }
+        }
+      }
+    }
+  }
+}

@@ -22,7 +22,7 @@ $snow-white: #ffffff;
 // General Style/
 .container-align {
   margin: 0 auto;
-  width: 70%;
+  width: 59%;
 }
 .container-align-inside {
   margin: 0 auto;
@@ -53,4 +53,15 @@ $snow-white: #ffffff;
     background-color: $rotten-cherry;
     color: $snow-white;
   }
+}
+.contact-general-p {
+  color: $dark-brown;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-family: "Barlow", sans-serif;
+}
+.contact-icons {
+  fill: $rotten-cherry;
+  width: 1.5rem;
+  height: 1.5rem;
 }
