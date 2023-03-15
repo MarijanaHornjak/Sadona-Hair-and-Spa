@@ -12,10 +12,23 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    .nav-left ul {
+      .services {
+        &:hover {
+          .drop-down-menu {
+            display: block;
+          }
+        }
+      }
+    }
+
     nav ul {
       display: flex;
       gap: 2.4rem;
       align-items: center;
+      .services {
+        position: relative;
+      }
 
       li {
         list-style: none;
@@ -26,6 +39,7 @@ header {
           color: $dusty-cream;
           text-decoration: none;
           padding: 0.5rem;
+
           img {
             margin-left: 1rem;
           }
@@ -39,19 +53,20 @@ header {
         }
       }
     }
-    .header-logo {
-      height: 9.3rem;
-      width: 16.5rem;
-    }
-    .arrowDown {
-      fill: $dusty-cream;
-      margin-left: 1rem;
-      transform: rotate(-90deg);
-      width: 0.5rem;
-      height: auto;
-      &:hover {
-        fill: $snow-white;
-      }
+  }
+
+  .header-logo {
+    height: 9.3rem;
+    width: 16.5rem;
+  }
+  .arrowDown {
+    fill: $dusty-cream;
+    margin-left: 1rem;
+    transform: rotate(-90deg);
+    width: 0.5rem;
+    height: auto;
+    &:hover {
+      fill: $snow-white;
     }
   }
 }

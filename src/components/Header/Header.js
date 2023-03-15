@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 import HeaderLogo from "../../assets/images/image-asset.png";
-// import Hero from "../Hero/Hero";
+import DropDownMenu from "./DropDownMenu";
 import "./Header.scss";
 import HeaderArrowDown from "./HeaderArrowDown";
 
@@ -33,10 +33,16 @@ const Header = () => {
               </Link>
             </li>
             <li className="services">
-              <Link to="/services" className="nav-links">
+              <Link
+                to="salon-services-section"
+                smooth={true}
+                duration={500}
+                className="nav-links "
+              >
                 Services
                 <HeaderArrowDown />
               </Link>
+              <DropDownMenu />
             </li>
           </ul>
         </nav>
